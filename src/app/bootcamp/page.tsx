@@ -4,7 +4,7 @@ import Card from "../components/card";
 export default function Bootcamp() {
   return (
     <div className="w-full h-auto py-14 px-6 md:px-[72px] gap-6 bg-white">
-      <div className="gap-2 text-center text-blackk">
+      <div className="gap-2 text-center text-blackk font-outfit">
         <h1 className="text-3xl font-normal">Bootcamp</h1>
         <h3 className="text-2xl font-light">
           Bergabunglah dengan bootcamp kami dan tingkatkan keterampilan Anda ke
