@@ -8,19 +8,21 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State untuk kontrol menu
 
   return (
-    <nav className="w-full h-[80px] bg-whitegrey flex flex-row justify-between px-10 items-center font-outfit">
+    <nav className="w-full h-[80px] sticky top-0 z-50 bg-whitegrey flex flex-row justify-between px-10 items-center font-outfit">
       <div className="flex flex-row items-center gap-10">
-        <img src="/id.png" alt="logo" className="w-[40px] h-[40px]" />
+        <Link href="/">
+          <img src="/id.png" alt="logo" className="w-[40px] h-[40px]" />
+        </Link>
         <input
           type="text"
           className="w-[250px] h-[44px] rounded-lg px-3 py-3 text-graynatural border-2 font-outfit border-graynatural"
           placeholder="Mau belajar apa hari ini?"
         />
       </div>
-      <div className="hidden lg:flex flex-row gap-6 text-base font-medium text-darkblue items-center font-outfit">
-        <Link href="">Program</Link>
-        <Link href="">Corporate</Link>
-        <Link href="">Tentang</Link>
+      <div className="hidden lg:flex flex-row gap-6 text-base font-medium text-darkblue2  items-center font-outfit">
+        <Link href="program" className="hover:text-darkgrey">Program</Link>
+        <Link href="learning" className="hover:text-darkgrey">Corporate</Link>
+        <Link href="contact" className="hover:text-darkgrey">Tentang</Link>
         <button className="w-[102px] h-[48px] bg-darkblue2 hover:bg-darkblue text-white rounded-sm font-outfit">
           Masuk
         </button>
@@ -57,13 +59,13 @@ export default function Navbar() {
       </div>
       {isOpen && (
         <div className="absolute top-[80px] font-outfit left-0 w-full bg-whitegrey flex flex-col items-start px-10 py-4 gap-4 text-darkblue text-base font-medium shadow-lg">
-          <Link href="" className="w-full">
+          <Link href="program" className="w-full">
             Program
           </Link>
-          <Link href="" className="w-full">
+          <Link href="learning" className="w-full">
             Corporate
           </Link>
-          <Link href="" className="w-full">
+          <Link href="contact" className="w-full">
             Tentang
           </Link>
           <button className="w-full h-[48px] bg-darkblue2 hover:bg-darkblue text-white rounded-sm">

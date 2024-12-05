@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CardLearning from "../components/cardLearning";
 
 export default function Learning() {
@@ -6,6 +7,9 @@ export default function Learning() {
         <div className="h-[194px] w-[528px] md:gap-4 pb-5 ">
             <h3 className="text-blackk font-normal text-4xl pb-4">Learning Path</h3>
             <h3 className="font-light text-xl text-blackk">Mulailah perjalanan belajar Anda di Learning Path Aplus! Tingkatkan pengetahuan dan keterampilan dengan panduan terstruktur untuk mencapai tujuan Anda. Yuk, belajar bersama sekarang!</h3>
+        </div>
+        <div className="w-full flex justify-end">
+        <Link href="" className="font-outfit text-darkblue2">Lihat Selengkapnya</Link>
         </div>
         <div className="flex flex-row gap-4">
             <CardLearning img=" https://s3-alpha-sig.figma.com/img/2e9f/0114/581dedba512d374e671f4d3167d4d041?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M14t7kFTv0lXz7aTO54v0gCdU8KWkM6KPSX9FaFExCa86u0GOGVCgq1zsHvbhLVDYw~1Let1p6R42VQeqbasPKYho~105repG~Uaj3hdo1DYkWBDQe7hkP~DTYPBbEWJ1avraXjdS0GqMqpYLTMxbYAuFr~OceAWjYeIfkKRNN5AqeTr~cQgcir9ygs3RF71ohM~vX43YLWbQBFgFyqvgIj1nau9IW5NHQFi~jQZ01K9u5g553vg6FNKOwxRuQTze5RmsBDVLNFrBPs23zLaCtnddhIqSXw8DDTXUbz2CBEjhGsqR~navpm-LAAgmvjKxFZhPEBmKBzuxP97bkty6Q__" 
